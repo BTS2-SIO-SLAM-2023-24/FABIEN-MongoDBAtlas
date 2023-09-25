@@ -1,0 +1,17 @@
+{
+    "name": "nom-de-votre-projet",
+    "version": "1.0.0",
+    "description": "Description de votre projet",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "mongoose": "^7.5.2"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.18",
+        "@types/mongoose": "^5.11.97",
+        "typescript": "^5.2.2"
+    }
+}

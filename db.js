@@ -13,16 +13,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.connectToDatabase = void 0;
-// db.ts
 const mongoose_1 = __importDefault(require("mongoose"));
 // Remplacez les valeurs entre < > par vos informations
 const connectionString = 'mongodb+srv://fabienmclll:jFKBiVfH8AGBN1ui@fabien.wvn8mqi.mongodb.net/?retryWrites=true&w=majority';
 const connectToDatabase = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        yield mongoose_1.default.connect(connectionString, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
+        yield mongoose_1.default.connect(connectionString);
         console.log('Connecté à MongoDB Atlas');
     }
     catch (error) {

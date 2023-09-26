@@ -10,7 +10,11 @@ const port = 3000;
 connectToDatabase();
 
 // Vos routes et logique d'application ici...
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
 
+// Écoute du serveur sur le port spécifié
 app.listen(port, () => {
   console.log(`Serveur en cours d'exécution sur le port ${port}`);
 });
